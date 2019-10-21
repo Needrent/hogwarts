@@ -13,14 +13,7 @@ function show(data){
         house: "Hufflepuff"
     });
 
-    //Count houses
-    //https://stackoverflow.com/questions/24977110/how-to-count-the-number-of-elements-in-this-json-object
-    function countHouse(data){
-        return Object.keys(data).length;
-    }
-    console.log(countHouse(data));
-
-    //console.table(data);
+    console.log(data);
     data.forEach(object=>{
         //Catch the different objects and made each their own array
         const fullname = object.fullname.split(" ");
@@ -32,6 +25,10 @@ function show(data){
         let cleanName = fullname.filter(value => Object.keys(value).length !== 0);
         let cleanHouse = houses.filter(value => Object.keys(value).length !== 0);
         let cleanGender = gender.filter(value => Object.keys(value).length !== 0);
+
+
+        //Count houses
+
 
         //Output the names arcording to length all as lower case, then CSS will make the first char uppercase
         if(cleanName.length > 2){
