@@ -4,6 +4,10 @@
   padding: 0;
   font-size: 10px;
 }
+/*----------------USE ON JSON STRING ELEMENTS*/
+p{
+    text-transform: capitalize;
+}
 /*----------------Navigation / filter*/
 label {
   position: relative;
